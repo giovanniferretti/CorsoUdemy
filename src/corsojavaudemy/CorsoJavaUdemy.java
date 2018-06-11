@@ -28,6 +28,6 @@ public class CorsoJavaUdemy {
 //        String[] myStringArr = {"testo 1", "testo 2", "testo 3"};
 //        myForWhileDoWhile.iteraForEach(myStringArr);
 //        myForWhileDoWhile.esempioBreak(10, 20);
-        myForWhileDoWhile.esempioContinue(10, 20);
+//        myForWhileDoWhile.esempioContinue(10, 20);
     }
 }
