@@ -10,42 +10,55 @@ package corsojavaudemy.ciclo;
  * @author giova
  */
 public class ForWhileDoWhile {
+
     public void itera(int contatore, int estremo) {
-        while(contatore < estremo) {
+        while (contatore < estremo) {
             System.out.println("contatore: " + contatore);
             contatore++;
         }
     }
-    
+
     public void iteraDoWhile(int contatore, int estremo) {
-        do{
+        do {
             System.out.println("contatore: " + contatore);
             contatore++;
-        } while (contatore < estremo);   
+        } while (contatore < estremo);
     }
-        
+
     public void iteraFor(int contatore, int estremo) {
-        for(int i = contatore; contatore < estremo; contatore++) {
+        for (int i = contatore; contatore < estremo; contatore++) {
             System.out.println("contatore: " + contatore);
         }
     }
-    
+
     /* Esempio di for-each
         Esempio di for-each
-    */
-    
+     */
     public void iteraForEach(String[] stringArray) {
-        for(String myElement:stringArray) {
+        for (String myElement : stringArray) {
             System.out.println(myElement);
         }
     }
-    
+
     public void esempioBreak(int interruttore, int estremo) {
-        for(int i = 0; i < estremo; i++) {
-            if(i == interruttore) {
+        int i = 0;
+        for (i = 0; i < estremo; i++) {
+            if (i == interruttore) {
                 System.out.println("i == interruttore");
                 break;
             }
+        }
+        System.out.println("Valore finale " + i);
+    }
+
+    public void esempioContinue(int interruttore, int estremo) {
+        int i = 0;
+        for (i = 0; i < estremo; i++) {
+            if (i == interruttore) {
+                System.out.println("i==interruttore");
+                continue;
+            }
+            System.out.println("Valore del contatore " + i);
         }
     }
 }
