@@ -9,7 +9,7 @@ package corsojavaudemy.oop.gestionale;
  *
  * @author u357400
  */
-public class Libro extends Prodotto {
+public class Libro extends Automobile {
     private String autore;
     private int numeroPagine;
 

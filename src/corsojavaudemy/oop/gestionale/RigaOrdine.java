@@ -12,12 +12,12 @@ package corsojavaudemy.oop.gestionale;
 public class RigaOrdine {
 
     private long id;
-    private Prodotto prodotto;
+    private Automobile prodotto;
     private int quantita;
     private double prezzoUnitario;
     private OrdineDiVendita odv;
 
-    public RigaOrdine(long id, Prodotto prodotto, int quantita, double prezzoUnitario) {
+    public RigaOrdine(long id, Automobile prodotto, int quantita, double prezzoUnitario) {
         this.id = id;
         this.prodotto = prodotto;
         this.quantita = quantita;
@@ -32,11 +32,11 @@ public class RigaOrdine {
         this.id = id;
     }
 
-    public Prodotto getProdotto() {
+    public Automobile getProdotto() {
         return prodotto;
     }
 
-    public void setProdotto(Prodotto prodotto) {
+    public void setProdotto(Automobile prodotto) {
         this.prodotto = prodotto;
     }
 

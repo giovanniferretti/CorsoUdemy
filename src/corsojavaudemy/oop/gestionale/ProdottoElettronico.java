@@ -9,7 +9,7 @@ package corsojavaudemy.oop.gestionale;
  *
  * @author u357400
  */
-public class ProdottoElettronico extends Prodotto {
+public class ProdottoElettronico extends Automobile {
 
     private String modello;
     private String marca;

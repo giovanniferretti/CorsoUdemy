@@ -52,7 +52,12 @@ public class Main {
         odv.getRigheOrdine().add(riga2);
         odv.getRigheOrdine().add(riga3);
 
-        odv.stampaOrdine();
+//        odv.stampaOrdine();
+        
+        Automobile auto1 = new Automobile();
+        auto1.setNome("Skoda");
+        auto1.setVerniciatura("Azzurra");
+        System.out.println(auto1.getNome());
 
     }
 

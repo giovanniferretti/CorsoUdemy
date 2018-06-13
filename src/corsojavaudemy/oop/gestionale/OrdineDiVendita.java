@@ -11,6 +11,7 @@ import java.util.List;
 /**
  *
  * @author u357400
+ * @version 1.2
  */
 public class OrdineDiVendita {
 
