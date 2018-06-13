@@ -21,7 +21,7 @@ public class Main {
         
         NuovoSmartphone nsm1 = new NuovoSmartphone();
         nsm1.getDescrizione();
-        
+                       
         Utente u1 = new Utente();
         
     }

@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package corsojavaudemy.oop.esempio;
+package corsojavaudemy.oop.gestionale;
 
 /**
  *
- * @author giova
+ * @author u357400
  */
-public class Libro  extends Prodotto {
-   
+public class Televisore extends ProdottoElettronico {
+    
 }
