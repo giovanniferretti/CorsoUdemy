@@ -39,11 +39,20 @@ public class Main {
         tv1.setModello("Smart TV");
         tv1.setPrezzo(1000);
 
+        Televisore tv2 = new Televisore();
+        tv2.setMarca("Sony");
+        tv2.setModello("Bravia");
+        tv2.setPrezzo(1050);
+
         RigaOrdine riga1 = new RigaOrdine(1, sm1, 1, sm1.getPrezzo());
         RigaOrdine riga2 = new RigaOrdine(1, tv1, 1, tv1.getPrezzo());
+        RigaOrdine riga3 = new RigaOrdine(2, tv2, 1, tv2.getPrezzo());
 
         odv.getRigheOrdine().add(riga1);
         odv.getRigheOrdine().add(riga2);
+        odv.getRigheOrdine().add(riga3);
+
+        odv.stampaOrdine();
 
     }
 

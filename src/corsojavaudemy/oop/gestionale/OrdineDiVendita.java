@@ -13,6 +13,7 @@ import java.util.List;
  * @author u357400
  */
 public class OrdineDiVendita {
+
     private long id;
     private Cliente cliente;
     private Date dataOrdine;
@@ -22,8 +23,7 @@ public class OrdineDiVendita {
     public static final String STATO_IN_ATTESA = "STATO IN ATTESA";
     public static final String STATO_SPEDITO = "STATO SPEDITO";
     public static final String STATO_CONSEGNATO = "STATO CONSEGNATO";
-    
-    
+
     public long getId() {
         return id;
     }
@@ -63,5 +63,15 @@ public class OrdineDiVendita {
     public void setRigheOrdine(List<RigaOrdine> righeOrdine) {
         this.righeOrdine = righeOrdine;
     }
-    
+
+    public void stampaOrdine() {
+        for (RigaOrdine myRiga : righeOrdine) {
+            if (myRiga.getProdotto() instanceof ProdottoElettronico) {
+                ProdottoElettronico myProdElett = (ProdottoElettronico) myRiga.getProdotto();
+                System.out.println("Dettaglio ordine");
+                System.out.println(this.getCliente().getCognome() + " " + myProdElett.getMarca() + " " + myProdElett.getModello());
+            }
+
+        }
+    }
 }
