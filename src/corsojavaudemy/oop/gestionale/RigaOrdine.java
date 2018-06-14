@@ -15,6 +15,8 @@ public class RigaOrdine {
     private Automobile prodotto;
     private int quantita;
     private double prezzoUnitario;
+    
+    //Relazione di composizione
     private OrdineDiVendita odv;
 
     public RigaOrdine(long id, Automobile prodotto, int quantita, double prezzoUnitario) {

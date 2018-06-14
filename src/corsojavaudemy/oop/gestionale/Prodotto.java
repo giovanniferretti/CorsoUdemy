@@ -14,6 +14,8 @@ public class Prodotto {
     private String nome;
     private String descrizione;
     private double prezzo;
+    
+    //Relazione di aggregazione
     private Categoria categoria;
 
     public long getId() {

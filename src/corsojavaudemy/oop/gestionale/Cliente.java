@@ -10,11 +10,13 @@ package corsojavaudemy.oop.gestionale;
  * @author u357400
  */
 public class Cliente {
+
     private long id;
     private String nome;
     private String cognome;
     private String codiceFiscale;
 
+//    private OrdineDiVendita odv;
     public long getId() {
         return id;
     }
@@ -46,6 +48,5 @@ public class Cliente {
     public void setCodiceFiscale(String codiceFiscale) {
         this.codiceFiscale = codiceFiscale;
     }
-    
-    
+
 }
