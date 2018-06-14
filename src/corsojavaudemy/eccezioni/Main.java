@@ -32,19 +32,29 @@ public class Main {
 //        }
 
         Main m = new Main();
-        m.stampaTesto(null);
+//        m.stampaTesto(null);
         m.stampaTesto("Testo di prova");
 
+        try {
+            m.stampaTesto1(null);
+        } catch (CorsoJavaException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private void stampaTesto(String testo) {
-        if (testo != null) {
-            String tmp = testo.concat("...");
 
-            System.out.println(tmp);
-        } else {
-            System.out.println("La variabile è null");
+        String tmp = testo.concat("...");
+
+        System.out.println(tmp);
+
+    }
+
+    private void stampaTesto1(String testo) throws CorsoJavaException {
+        if (testo == null) {
+            throw new CorsoJavaException();
         }
+        stampaTesto(testo);
 
     }
 
