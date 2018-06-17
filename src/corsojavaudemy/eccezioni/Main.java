@@ -58,4 +58,10 @@ public class Main {
 
     }
 
+    private String esegui(String testo) throws CorsoJavaException {
+        stampaTesto1(testo);
+
+        return "Ho stampato il testo desiderato";
+    }
+
 }
