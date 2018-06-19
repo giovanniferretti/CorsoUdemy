@@ -130,8 +130,8 @@ public class Main {
 
 //        myMain.esempioArrayList();
 //        myMain.esempioHashMap();
-//        myMain.getConfig();
-        myMain.esempioIterazione();
+        myMain.getConfig();
+//        myMain.esempioIterazione();
     }
 
     public void creaArray() {
